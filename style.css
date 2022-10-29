@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 a {
@@ -95,14 +96,21 @@ ul {
 }
 
 .figure-image {
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-button {
     border: none;
     height: 24px;
     width: 84px;
+}
+
+.images-captions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .signup, .hero-button, .call-button{
