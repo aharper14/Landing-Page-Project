@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 a {
@@ -57,10 +56,15 @@ ul {
     margin: 0;
 }
 
+.center-everything {
+    padding: 0 60px 0 60px;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .hero-subtext {
@@ -84,6 +88,14 @@ ul {
 
 .hero-image-container {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hero-image {
+    width: 75%;
+    height: 75%;
 }
 
 .links {
@@ -95,9 +107,32 @@ ul {
     align-items: center;
 }
 
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 84px 0;
+    text-align: center;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
 .figure-image {
     width: 100%;
     height: 100%;
+}
+
+.hero-text {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
 }
 
 .hero-button {
@@ -113,7 +148,31 @@ ul {
     gap: 16px;
 }
 
-.signup, .hero-button, .call-button{
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    background: #e5e7eb;
+    padding: 24px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    padding: 24px;
+    color: #1f2937;
+}
+
+.quote-source {
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.signup, .hero-button, .call-button {
     background-color: #3882f6;
     border-radius: 5px;
     color: #f9faf8;
@@ -124,8 +183,9 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     margin: 100px;
+    width: 640px;
 }
 
 .call-button {
@@ -138,6 +198,7 @@ ul {
 .call, .call-subtext {
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
 .call {
@@ -146,11 +207,18 @@ ul {
 }
 
 .call-subtext {
-    font-size: 10pt;
+    font-size: 12px;
+}
+
+.call-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
+    margin: 0;
     padding: 24px;
-    font-size: 10pt;
+    font-size: 12px;
     text-align: center;
+    width: 100%;
 }
